@@ -14,6 +14,9 @@
 		CA4408082C37FAFD00B5B0B3 /* AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4408072C37FAFD00B5B0B3 /* AnimationTests.swift */; };
 		CA4408122C37FAFD00B5B0B3 /* AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4408112C37FAFD00B5B0B3 /* AnimationUITests.swift */; };
 		CA4408142C37FAFD00B5B0B3 /* AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4408132C37FAFD00B5B0B3 /* AnimationUITestsLaunchTests.swift */; };
+		CA5462412C3E9A9600CE4A5E /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5462402C3E9A9600CE4A5E /* CustomAnimationView.swift */; };
+		CA5462432C3E9CD400CE4A5E /* AnimationModifiersCombined.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5462422C3E9CD400CE4A5E /* AnimationModifiersCombined.swift */; };
+		CA5462452C3EA04700CE4A5E /* AnimationModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5462442C3EA04700CE4A5E /* AnimationModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		CA44080D2C37FAFD00B5B0B3 /* AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4408112C37FAFD00B5B0B3 /* AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUITests.swift; sourceTree = "<group>"; };
 		CA4408132C37FAFD00B5B0B3 /* AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA5462402C3E9A9600CE4A5E /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
+		CA5462422C3E9CD400CE4A5E /* AnimationModifiersCombined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifiersCombined.swift; sourceTree = "<group>"; };
+		CA5462442C3EA04700CE4A5E /* AnimationModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				CA4407F62C37FAFC00B5B0B3 /* AnimationApp.swift */,
 				CA4407F82C37FAFC00B5B0B3 /* ContentView.swift */,
+				CA5462402C3E9A9600CE4A5E /* CustomAnimationView.swift */,
+				CA5462422C3E9CD400CE4A5E /* AnimationModifiersCombined.swift */,
+				CA5462442C3EA04700CE4A5E /* AnimationModifiers.swift */,
 				CA4407FA2C37FAFD00B5B0B3 /* Assets.xcassets */,
 				CA4407FC2C37FAFD00B5B0B3 /* Preview Content */,
 			);
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5462412C3E9A9600CE4A5E /* CustomAnimationView.swift in Sources */,
+				CA5462432C3E9CD400CE4A5E /* AnimationModifiersCombined.swift in Sources */,
+				CA5462452C3EA04700CE4A5E /* AnimationModifiers.swift in Sources */,
 				CA4407F92C37FAFC00B5B0B3 /* ContentView.swift in Sources */,
 				CA4407F72C37FAFC00B5B0B3 /* AnimationApp.swift in Sources */,
 			);
