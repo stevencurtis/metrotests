@@ -1,11 +1,14 @@
 # Mastering State Transitions and Animations in SwiftUI
-##
+## Slightly More Complex Animation
 
 Animations should be FUN! We should be thinking about how to make movement a real feature in our apps. This means we should take a look at the [motion section of Apple's HCI guidelines](https://developer.apple.com/design/human-interface-guidelines/motion).
 
 That said, this article delves into state-driven UI updates and how to integrate animation to enhance user experiences.
 
 ## Explicit Animation
+Provide detailed control over animation parameters, such as duration, delay, and curve.
+
+
 ```swift
 import SwiftUI
 
@@ -39,10 +42,11 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 ```
 
 ## Implicit Animation
+Automatically animate changes in view properties without specifying any details about how the animation should occur.
+
 ```swift
 import SwiftUI
 
@@ -75,7 +79,6 @@ struct ModifierExample: View {
 #Preview {
         ModifierExample()
 }
-
 ```
 
 ## Animating Bindings
@@ -105,7 +108,6 @@ struct BinderAnimation: View {
 ## Built-In and Custom Animations
 **Animating Custom Views**
 SwiftUI can animate many built-in view modifiers, such as those adjusting scale or opacity. For custom animations, you can make your views conform to the Animatable protocol and specify the animatable values.
-
 
 ```swift
 import SwiftUI
@@ -152,7 +154,7 @@ struct AnimatableExample: View {
 ```
 
 *Animatable Modifier*
-AnimatableModifier provides a structured and reusable way to encapsulate complex animations.
+`AnimatableModifier` provides a structured and reusable way to encapsulate complex animations.
 
 This `AnimatableModifier` is a combination of `Animatable` and `ViewModifier`.
 
@@ -200,9 +202,9 @@ struct ShakeExample: View {
 ```
 
 **Managing View Transitions**
-When state changes involve adding or removing views from the view hierarchy, use transitions to define how views should appear or disappear. SwiftUI provides several built-in transitions through the AnyTransition type, such as .slide and .scale. You can also create custom transitions.
+When state changes involve adding or removing views from the view hierarchy, use transitions to define how views should appear or disappear. SwiftUI provides several built-in transitions through the `AnyTransition` type, such as `.slide` and `.scale`. You can also create custom transitions.
 
-In this example the @State property wrapper is used to manage view state, and the .slide transition provides a built-in smooth sliding animation. 
+In this example the `@State` property wrapper is used to manage view state, and the `.slide` transition provides a built-in smooth sliding animation. 
 
 ```swift
 import SwiftUI
@@ -309,13 +311,13 @@ extension AnyTransition {
 }
 ```
 
-# Conforming to Animatable
+## Conforming to Animatable
 When the data you wish to animate is not inherently animatable you can conform to the `Animatable` protocol. This allows SwiftUI to understand how to interpolate between different states of data for animations.
 
 The idea of using `Animatable` is that we can have
  - Smooth animations
  - Great control over animation behaviours
- - We can integrate with standard animation modifiers like `.animation(_:value:)
+ - We can integrate with standard animation modifiers like `.animation(_:value:)`
  - Reusable code
  
  
@@ -365,7 +367,7 @@ struct AnimatableExample: View {
 }
 ```
 
-# Conforming to AnimatableModifier
+## Conforming to AnimatableModifier
 `AnimatableModifier` creates reusable, custom animations that can be applied as view modifiers. This enables encapsulating animation logic within a modifier rather than in a view's structure.
 
 Here are the advantages of using `AnimatableModifier`:
@@ -418,10 +420,8 @@ struct ShakeExample: View {
 #Preview {
     ShakeExample()
 }
-
 ```
-
 
 ## Conclusion
 
-
+Animation in SwiftUI? I've taken you on a little bit of an adventure in this article. I hope it has to some extent helped you out, and It's been in some way enjoyable.
