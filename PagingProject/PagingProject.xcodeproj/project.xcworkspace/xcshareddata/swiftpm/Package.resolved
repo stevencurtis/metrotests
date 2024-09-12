@@ -1,0 +1,15 @@
+{
+  "originHash" : "1b56e576f4b36390d2856d6fe64fa5b43600360619ec233a19cb521c2ddc9af8",
+  "pins" : [
+    {
+      "identity" : "networkclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stevencurtis/NetworkClient",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7c28eb4ae59e0b090582b2314138800dc568b59e"
+      }
+    }
+  ],
+  "version" : 3
+}
